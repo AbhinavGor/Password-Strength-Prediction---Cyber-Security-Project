@@ -16,9 +16,9 @@ def length_distance(w1, w2):
 bkt = BKTree.from_file('smallsample.txt')
 # bkt = BKTree.from_file('rockwell.txt')
 # bkt = BKTree.from_file('rockyou.txt')
-newpass = "aditya"
+newpass = input("Enter new password: ")
 # newpass = 'jesuscristo'
 result = bkt.search(newpass, 3)
 for i in result:
     print(i[0], i[1].word)
-print(result)
+# print(result)
